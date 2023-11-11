@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Title -->
+    <title>StopWatch | Himadri Nayak</title>
+    <!-- add CSS -->
+    <link id="theme" rel="stylesheet" href="./styles/light.css"> </link>
+</head>
+
+
+<body>
+<!-- header -->
+    <div class="header">
+        <p>STOPWATCH</p>
+     <!--dark-light toggle button  -->
+        <div id="toggle">
+            <input type="checkbox" class="switch" id="switch">
+            <label for="switch" class="mode">
+                <div class='ball'></div>
+            </label>
+        </div>
+    </div>
+
+<!-- body -->
+    <div class="container">
+<!-- time -->
+        <div class="view">
+            <span class="time">
+                <p class="timer" id="hr">00:</p>
+                <p class="label">Hours</p>
+            </span>
+            <span class="time">
+                <p class="timer" id="min">00:</p>
+                <p class="label">Minutes</p>
+            </span>
+            <span class="time">
+                <p class="timer" id="sec">00:</p>
+                <p class="label">Seconds</p>
+            </span>
+            <span class="time">
+                <p class="timer" id="mils">00</p>
+                <p class="label">MilliSeconds</p>
+            </span>
+        </div>
+<!-- buttons -->
+        <div class="buttons">
+            <button id="start" onclick="onClick()">START</button>
+            <button id="stop" onclick="stopTimer()">STOP</button>
+            <button id="reset" onclick="resetTimer()">RESET</button>
+        </div>
+    </div>
+
+
+<!-- adding javascript -->
+    <script src="./scripts/script.js"></script>
+
+</body>
+
+</html>

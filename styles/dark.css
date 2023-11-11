@@ -1,0 +1,114 @@
+body {
+    background-color:#302e2e;
+    margin: 0;
+}
+
+
+/* styles for the header */
+.header {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.header p {
+    margin-left: 10%;
+    font-size: 50px;
+    font-weight: 800;
+    color:black;
+}
+/* toggle button for light and dark mode */
+#toggle {
+    margin-left: auto;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    align-self: flex-end;
+}
+.switch {
+    visibility: hidden;
+}
+.mode {
+  width: 50px;
+  height: 15px;
+  background-color: black;
+  display: flex;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+}
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: rgb(60, 52, 116);
+  position: absolute;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+/* when clicked on the toggle button */
+.switch:checked + .mode .ball {
+  transform: translateX(31px);
+}
+
+
+/* styles for the body */
+.container {
+    background-color: rgb(60, 52, 116);
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+.view {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.time {
+    display: flex;
+    flex-direction: column;
+}
+.timer {
+    font-family: 'Courier';
+    font-size: 10vw;
+    color: black;
+    margin: 0;
+}
+.label {
+    font-size: 1.8vw;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vw;
+}
+.buttons button {
+    margin: 1.5vw;
+    width: 15vw;
+    height: 40px;
+    border-radius: 7px;
+    border:2px dashed;
+    color:black;
+    background-color: #3b3939;
+    font-size: 1.7vw;
+    font-weight: 800;
+}
+
+/* initial state of stop and rest button */
+#stop, #reset {
+    border: none;
+    opacity: 0.7;
+}
+
+
+/* on hover style*/
+.mode:hover {
+ cursor: pointer;
+}
+
