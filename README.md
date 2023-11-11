@@ -1,6 +1,4 @@
 # STOPWATCH 
-## A basic Stopwatch with dark and light modes
- Link : https://agentgrey.github.io/Stopwatch/ 
  
 ### Features
 * Start : Starts the stopwatch
